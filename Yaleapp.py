@@ -24,31 +24,78 @@
 #print('here are three numbers! the first is {0:d} the second is {1:f} and {2:d}'.format(8,9,7))
 
 #The import statement gives us access to the functionality of the datetime class
+#team = input('enter your fav hockey team: ').upper()
+#sport = input('enter your fav sport:  ').upper()
+#import turtle
 
-#Declare variables
-orderTotal = 0
-shippingCost = 0
-totalWithShipping = 0
+'''for steps in ['red','black','blue','brown']:
+    turtle.color(steps)
+    turtle.forward(100)
+    turtle.right(90)
+import turtle
+shapeAngle = int(input('enter the angle to make:  '  ))
+shapeSide = int(input('enter the length of the side of your shape:  '))
+shapeColor = input('enter your fav color:  ')
 
-#Ask user for their order total and convert the answer to a number
-orderTotal = float(input("What was the total for your order? " ))
+while shapeSide !=0:
+    turtle.color(shapeColor)
+    turtle.forward(shapeSide)
+    turtle.right(shapeAngle)
 
-#Calculate the shipping cost based on the order total
-if orderTotal >= 50 :
-    shippingCost = 0
-else :
-    shippingCost = 10
+    if shapeSide != 0 :
+        shapeColor = input("What pen color would you like to use? (black, blue, red, green): ")
+        shapeAngle = int(input("What angle would you like? (0-360): "))
 
-#Calculate order total including shipping
-totalWithShipping = orderTotal + shippingCost
+print("You are an amazing artist!")'''
 
-#Tell the user their final total
-print("Your final total, including shipping, will be: $%.2f " % totalWithShipping)
-
-
-
+'''for moving in range(shapeDraw):
+       turtle.forward(shapeSide/2)
+       turtle.right(360/shapeDraw)'''
+guestsInput = ''
+guestsList = []
+nbrEntries = 0
 
 
+guestsInput = input('Please enter tne name of guests attending the party:  ').upper()
+nbrEntries = len(guestsList)
+
+while guestsInput != 'DONE':
+    guestsList.append(guestsInput)
+
+
+
+    if guestsInput != 'DONE':
+        guestsInput = input('Please enter tne name of guests attending the party:  ').upper()
+        nbrEntries = len(guestsList)
+
+
+guestsList.sort()
+print(guestsList)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'''print(guests)
+guests[-1] = 'judas'
+print(guests)
+guests.append('mathew')
+guests.remove('chris')
+del guests[1]
+print(guests)
+print(guests[-1])'''
 
 
 
