@@ -1,9 +1,9 @@
 
 
-#welcome the fucking user
+#welcome the user
 name = input("What is your name? ").upper()
 
-print ("Hello, " + name, "time to play the fucking game!")
+print ("Hello, " + name, "time to play the game!")
 
 #wait for 1 second
 #time.sleep(1)
